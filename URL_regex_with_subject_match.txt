@@ -1,0 +1,7 @@
+// Source: https://microsoft.com/security/blog/2021/04/09/investigating-a-unique-form-of-email-delivery-for-icedid-malware/
+// Locate Emails based on subject
+
+EmailUrlInfo
+| where Url matches regex @"\b<your regex from the URL>\b"
+| join EmailEvents on NetworkMessageId
+| where Subject has_any('<your subject of interest>')
