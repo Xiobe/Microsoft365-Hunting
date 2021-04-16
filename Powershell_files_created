@@ -1,0 +1,7 @@
+// The goal of this query is to discover the use of Powershell use in the environment and get a feel of what is common and not.
+
+DeviceFileEvents
+| where ActionType == "FileCreated"
+| where FileName matches regex @"\bw+\.ps1\b"
+| where isnotempty(SHA1)
+| where FolderPath notlike ("C:\\Windows\\CCM")
