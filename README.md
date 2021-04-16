@@ -1,2 +1,2 @@
 # Microsoft365-Hunting
-Hunting Queries
+This is just a dumping ground for my brain, if it helped you I am glad it did.
