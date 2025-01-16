@@ -73,6 +73,8 @@ Test:
 certutil -decode encoded_calc.exe decoded_calc.exe
 ```
 
+Microsoft Defender detects the decoding as `Use of living-off-the-land binary to run malicious code`. You can not however fetch the encoded file nor the decoded file from the user interface. If you need these files you will need to retrieve them with a `getfile` from the system by running a `live session`.
+
 ### Decode a hexadecimal encoded file
 
 Test:
