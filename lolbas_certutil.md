@@ -82,3 +82,17 @@ Test:
 ```
 certutil -decodehex encodedhex_calc.exe decodedhex_calc.exe
 ```
+
+## Hunting Queries
+
+### Detection of the encoding/decoding
+
+```Text
+DeviceFileEvents
+| where ActionType == "FileCreated"
+| where InitiatingProcessFileName == @"certutil.exe"
+| project TimeGenerated, InitiatingProcessCreationTime, InitiatingProcessAccountUpn,  InitiatingProcessCommandLine, FolderPath, SHA256, DeviceName, InitiatingProcessSessionId, InitiatingProcessRemoteSessionDeviceName, InitiatingProcessRemoteSessionIP
+```
+
+
+|||
