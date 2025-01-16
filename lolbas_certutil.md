@@ -57,7 +57,7 @@ Test:
 certutil -decode encoded_calc.exe decoded_calc.exe
 ```
 
-This gets detected by Microsoft Defender as `Use of living-off-the-land binary to run malicious code`. It tags it as a `low` priority event and was **not** prevented. I was able to decode the `encoded_calc.exe` and run `decoded_calc.exe`.
+This gets detected by Microsoft Defender as `Use of living-off-the-land binary to run malicious code`. It tags it as a `low` priority event and was **not** prevented. I was able to decode the `encoded_calc.exe` and run `decoded_calc.exe`. You are not able to fetch the `decoded_calc.exe` from the user interface, to obtain a copy you need a *live response session* on the remote system.
 
 ### Decode a hexadecimal encoded file
 
