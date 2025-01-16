@@ -107,4 +107,3 @@ DeviceFileEvents
 | `InitiatingProcessRemoteSessionDeviceName` | The remote system's name the `InitiatingProcessSessionId` originated from. This is empty if it was the local system. |
 | `InitiatingProcessRemoteSessionIP` | The remote system's IP address the `InitiatingProcessSessionId` originated from. This is empty if it was the local system.|
 
-|||
