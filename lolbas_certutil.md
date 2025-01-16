@@ -10,6 +10,9 @@ Test:
 certutil.exe -urlcache -split -f http://7-zip.org/a/7z1604-x64.exe 7zip.exe
 ```
 
+This gets detected and prevented by Microsoft Defender but (16th of January 2025) instead of detecting the download using a lolbin it named the incident `Defender prevented execution of 'Trojan:Win/Ceprolad.A' in the command line ...`.
+It tags it as a `low` priority event since it got prevented.
+
 ## Download file from Internet Case 2
 
 Test:
@@ -53,6 +56,8 @@ Test:
 ```
 certutil -decode encoded_calc.exe calc.exe
 ```
+
+This gets detected by Microsoft Defender as `Use of living-off-the-land binary to run malicious code`. 
 
 ### Decode a hexadecimal encoded file
 
