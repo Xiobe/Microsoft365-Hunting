@@ -1,6 +1,6 @@
 # Lolbas CertUtil
 
-[Lolol Farm](https://lolol.farm/) is a project that groups all living of the land techniques. [Lolbas](https://lolbas-project.github.io/#) is specifically targetting Windows binaries.
+[Lolol Farm](https://lolol.farm/) is a project that groups all living of the land techniques. [Lolbas](https://lolbas-project.github.io/#) is specifically targetting Windows binaries. [Certutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/certutil) is one of these binaries that can be abused.
 
 ## Download file from Internet Case 1
 
