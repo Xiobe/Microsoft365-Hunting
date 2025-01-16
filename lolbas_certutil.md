@@ -54,10 +54,10 @@ certutil -encodehex c:\windows\system32\calc.exe encodedhex_calc.exe
 Test:
 
 ```
-certutil -decode encoded_calc.exe calc.exe
+certutil -decode encoded_calc.exe decoded_calc.exe
 ```
 
-This gets detected by Microsoft Defender as `Use of living-off-the-land binary to run malicious code`. It tags it as a `low` priority event and was **not** prevented.
+This gets detected by Microsoft Defender as `Use of living-off-the-land binary to run malicious code`. It tags it as a `low` priority event and was **not** prevented. I was able to decode the `encoded_calc.exe` and run `decoded_calc.exe`.
 
 ### Decode a hexadecimal encoded file
 
