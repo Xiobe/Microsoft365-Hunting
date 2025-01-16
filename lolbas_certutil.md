@@ -96,15 +96,15 @@ DeviceFileEvents
 
 | Column | Interpretation |
 | ------ | -------------- |
-| `TimeGenerated` | |
-| `InitiatingProcessCreationTime` | |
-| `InitiatingProcessAccountUpn` | |
-| `InitiatingProcessCommandLine` | |
-| `FolderPath` | |
-| `SHA256` | |
-| `DeviceName` | |
-| `InitiatingProcessSessionId` | |
-| `InitiatingProcessRemoteSessionDeviceName` | |
-| `InitiatingProcessRemoteSessionIP` | |
+| `TimeGenerated` | The timestamp the entry was generated on the system the event occured. |
+| `InitiatingProcessCreationTime` | The timestamp the initiating process was created. |
+| `InitiatingProcessAccountUpn` | The account the initiating process was started with. |
+| `InitiatingProcessCommandLine` | The command line for the initiating process |
+| `FolderPath` | The folder path of the resulting file. This can be handy if not mentioned in the `InitiatingProcessCommandLine` |
+| `SHA256` | The SHA256 of the output file. |
+| `DeviceName` | The device on which the `InitiatingProcessCommandLine` was executed. |
+| `InitiatingProcessSessionId` | The session ID in which the `InitiatingProcessCommandLine` was executed. If 0 it executed in system context, 1 means the logged on user and more than 1 typically is a remote user. |
+| `InitiatingProcessRemoteSessionDeviceName` | The remote system's name the `InitiatingProcessSessionId` originated from. This is empty if it was the local system. |
+| `InitiatingProcessRemoteSessionIP` | The remote system's IP address the `InitiatingProcessSessionId` originated from. This is empty if it was the local system.|
 
 |||
