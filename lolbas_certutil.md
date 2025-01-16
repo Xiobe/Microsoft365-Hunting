@@ -34,6 +34,9 @@ Test:
 certutil.exe -verifyctl -f -split http://7-zip.org/a/7z1604-x64.exe 7zip.exe
 ```
 
+This gets detected and prevented by Microsoft Defender but (16th of January 2025) instead of detecting the download using a lolbin it named the incident `Defender prevented execution of 'Trojan:Win/Ceprolad.A' in the command line ...`.
+It tags it as a `low` priority event since it got prevented.
+
 ## Download file from Internet and Save to alternate data stream
 
 Test:
