@@ -94,5 +94,17 @@ DeviceFileEvents
 | project TimeGenerated, InitiatingProcessCreationTime, InitiatingProcessAccountUpn,  InitiatingProcessCommandLine, FolderPath, SHA256, DeviceName, InitiatingProcessSessionId, InitiatingProcessRemoteSessionDeviceName, InitiatingProcessRemoteSessionIP
 ```
 
+| Column | Interpretation |
+| ------ | -------------- |
+| `TimeGenerated` | |
+| `InitiatingProcessCreationTime` | |
+| `InitiatingProcessAccountUpn` | |
+| `InitiatingProcessCommandLine` | |
+| `FolderPath` | |
+| `SHA256` | |
+| `DeviceName` | |
+| `InitiatingProcessSessionId` | |
+| `InitiatingProcessRemoteSessionDeviceName` | |
+| `InitiatingProcessRemoteSessionIP` | |
 
 |||
