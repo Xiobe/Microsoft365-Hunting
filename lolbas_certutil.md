@@ -85,6 +85,12 @@ certutil -decodehex encodedhex_calc.exe decodedhex_calc.exe
 
 ## Hunting Queries
 
+### The download attempts
+
+Since MS defender is blocking the download attempts we still want to collect the information about the attempts.
+
+
+
 ### Detection of the encoding/decoding
 
 ```Text
