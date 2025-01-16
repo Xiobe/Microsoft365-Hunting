@@ -57,7 +57,7 @@ Test:
 certutil -decode encoded_calc.exe calc.exe
 ```
 
-This gets detected by Microsoft Defender as `Use of living-off-the-land binary to run malicious code`. 
+This gets detected by Microsoft Defender as `Use of living-off-the-land binary to run malicious code`. It tags it as a `low` priority event and was **not** prevented.
 
 ### Decode a hexadecimal encoded file
 
