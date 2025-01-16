@@ -2,6 +2,19 @@
 
 [Lolol Farm](https://lolol.farm/) is a project that groups all living of the land techniques. [Lolbas](https://lolbas-project.github.io/#) is specifically targetting Windows binaries. [Certutil](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/certutil) is one of these binaries that can be abused.
 
+## Enumeration of Infrastructure
+
+You can enumerate the PKI infrastructure with `certutil`:
+
+```Shell
+certutil.exe
+```
+
+This command yields you:
+
+* the name of the server is that is the certificate authority
+* the domain for that system
+
 ## Download file from Internet Case 1
 
 Test:
